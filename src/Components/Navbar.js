@@ -84,10 +84,10 @@ const Navbar = ({Location,setLocation}) => {
 
     return (
         <>
-            <div className="flex bg-[#330000] m-2 py-2 px-7 space-x-5">
-                <div className="flex gap-5">
+            <div className="flex  m-1  px-7 py-2 space-x-12">
+                <div className="flex gap-5 ml-4">
                     <button className='text-white'>☰</button>
-                    <img src="./images/download-removebg-preview.png" alt="logo" className='w-7' />
+                    <img src="./images/download-removebg-preview.png" alt="logo" className='w-12 h-12' />
                 </div>
                 <div className="ml-6 relative w-96">
                     <input
@@ -104,11 +104,11 @@ const Navbar = ({Location,setLocation}) => {
                 </div>
                 <div>
                     <button
-                        className='bg-[#1a0000] rounded-full p-4 w-full'
+                        className='bg-[#1a0000] rounded-full px-4 py-2 w-full'
                         onClick={getLocation}
                     >
                         <MyLocationIcon className='text-white' />
-                        <span className="text-white">Current Location</span>
+                        <span className="text-white text-sm">Current Location</span>
                     </button>
                     
                     {Address && <div className="text-white mt-2">Address: {Address}</div>}

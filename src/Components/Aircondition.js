@@ -76,7 +76,7 @@ const Aircondition = ({ setLocation, Location }) => {
         <>
             {error && <p className="text-red-500">{error}</p>}
             {Airvalue ? (
-                <div className="bg-[#330000] px-8 py-3  w-full rounded-xl">
+                <div className="bg-[#330000] px-8 py-3 h-full  w-full rounded-xl">
                     <h1 className="text-white text-sm">Today Highlights</h1>
                     <div className="bg-black px-4 py-2 rounded-xl mt-3">
                         <div className="flex justify-between">
@@ -158,34 +158,34 @@ const Aircondition = ({ setLocation, Location }) => {
                     <div className="bg-black px-4 py-2 rounded-xl mt-3">
                         <h1 className="text-white text-lg">Weather Data</h1>
                         <div className="flex space-x-64 mt-3">
-                            <div className="flex">
-                                <WaterDropIcon className="text-white" />
+                            <div className="flex gap-3">
+                                <WaterDropIcon style={{ fontSize: 30 }} className="text-white" />
                                 <div>
-                                    <p className="text-white">Humidity</p>
-                                    <p className="text-white">{Sunrise?.main.humidity}%</p>
+                                    <p className="text-white text-[10px]">Humidity</p>
+                                    <p className="text-white text-[14px]">{Sunrise?.main.humidity}%</p>
                                 </div>
                             </div>
-                            <div className="flex">
-                                <TireRepairIcon className="text-white" />
+                            <div className="flex gap-3">
+                                <TireRepairIcon style={{ fontSize: 30 }} className="text-white" />
                                 <div>
-                                    <p className="text-white">Pressure</p>
-                                    <p className="text-white">{Sunset?.main.pressure}hPa</p>
+                                    <p className="text-white text-[10px]">Pressure</p>
+                                    <p className="text-white text-[14px]">{Sunset?.main.pressure}hPa</p>
                                 </div>
                             </div>
                         </div>
                         <div className="flex space-x-64 mt-3">
-                            <div className="flex">
-                                <DeviceThermostatIcon className="text-white" />
+                            <div className="flex gap-3">
+                                <DeviceThermostatIcon style={{ fontSize: 30 }} className="text-white" />
                                 <div>
-                                    <p className="text-white">Feels Like</p>
-                                    <p className="text-white">{Sunrise?.main.feels_like}°C</p>
+                                    <p className="text-white text-[10px]">Feels Like</p>
+                                    <p className="text-white text-[14px]">{Sunrise?.main.feels_like}°C</p>
                                 </div>
                             </div>
-                            <div className="flex">
-                                <VisibilityOffIcon className="text-white" />
+                            <div className="flex gap-3">
+                                <VisibilityOffIcon style={{ fontSize: 30 }} className="text-white" />
                                 <div>
-                                    <p className="text-white">Visibility</p>
-                                    <p className="text-white">{Sunset?.visibility}m/s</p>
+                                    <p className="text-white text-[10px]">Visibility</p>
+                                    <p className="text-white text-[14px]">{Sunset?.visibility}m/s</p>
                                 </div>
                             </div>
                         </div>
